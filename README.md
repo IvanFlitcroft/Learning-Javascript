@@ -24,4 +24,4 @@ After this, I plan on learning about the vue framework for javascript.
 
 ### Reading
 
--https://javascript.info/first-steps
+- https://javascript.info/first-steps
