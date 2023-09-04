@@ -1,5 +1,18 @@
 # Understanding data types in Javascript
 When instantiating a variable, we can use 'let', 'var' or 'const' and each have their own differences
+## Let
+```javascript
+function letTest() {
+ let x = 1;
+
+  if (true) {
+       console.log(x); // will print 1
+  }
+
+ console.log(x); // will print 1
+
+}
+```
 
 ```javascript
 function letTest() {
@@ -13,8 +26,10 @@ function letTest() {
   console.log(x); // will print 1
 }
 ```
+
 When we use 'let', the variable only exists in the block in which it is instantiated, no other blocks inside or outside. This is why letTest() will output two different values of 'x' as we have one instance of x declared at the start of the function and another one declared in a block inside the main function block.
 
+## Var
 ```javascript
 function varTest() {
   var x = 1;
