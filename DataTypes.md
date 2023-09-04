@@ -52,12 +52,12 @@ function nestedLetVarTest() {
   console.log(blockVariable); // will throw an error
 }
 ```
-##Why does this happen? JS hoisting
+## Why does this happen? JS hoisting
 
 This occurs due to Javascript hoisting. This is a process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, before the execution of the code.
 So in the case above, the var declaration of functionVariable is hoisted to the top level of nestedLetVarTest() before execution, but the let declaration of blockVariable is not. This means the variable defined by var can be accessed outside of the function whereas let cannot as the let variable was defined inside the function block.
 
-##Summary of let vs var
+## Summary of let vs var
 
 The main differences between let and var are:
 - variables declared with `let` exist within its own block, hence multiple instances of the same variable can be declared with different values in different blocks and it will not affect the other values. Theyre essentially independant
