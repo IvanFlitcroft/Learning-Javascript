@@ -45,6 +45,7 @@ function varTest() {
 ```
 When we use 'var', the variable exists throughout the function, in every block inside or outside. The variable could be declared inside a deeply nested block and it will still exist within the whole function. In this example, we initially declare the variable 'x' with an integer value of 1, however, by declaring another variable with the same name, we override the value of the varaiable with the name hence 2 is outputted twice.
 
+## Let vs Var
 
 Lets take a look at this example. We have a function in which we instantiate two variables: 'functionVariable' and 'blockVariable'. In this test we show how the values can be accessed within the function and within nested blocks in the function itself. However if we try to print out the variables outside of the function, only 'functionVariable' can be printed, which is not something we would usually expect, right? Lets discuss why this occurs.
 
