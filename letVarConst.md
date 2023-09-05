@@ -78,3 +78,15 @@ So in the case above, the var declaration of functionVariable is hoisted to the 
 The main differences between let and var are:
 - variables declared with `let` exist within its own block, hence multiple instances of the same variable can be declared with different values in different blocks and it will not affect the other values. Theyre essentially independant
 - variables declared with `var` exist within the whole function, hence declaring another instance of the same variable will override its initial value. There is only one variable of that name
+
+## Const
+
+When we declare a variable with const, its value remains rigid and cannot be changed. In addition, Constants have a block scope like variables declared with `let`
+
+```javascript
+function ageTest(){
+  const age = 18;
+  age = 12 //this will throw an error with this as you cannot re-assign a value to a constant
+  console.log(age);
+  }
+```
