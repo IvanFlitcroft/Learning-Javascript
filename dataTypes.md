@@ -35,9 +35,9 @@ var ageOfUniverse = BigInt(72374299827398478923);
 ```
 ## Symbol
 ```js
-var characterSym1 = Symbol("#");
+var Sym1 = Symbol("Description");
 ```
-symbols are defined using the wrapper method `symbol()` and you cannot create the same symbol twice in a function or program. Symbols are immutable.
+symbols are defined using the wrapper method `Symbol()` (ensure you use a CAPITAL s) and you cannot create the same symbol twice in a function or program. Symbols are immutable.
 You can pass an optional string as its description. For example,
 
 ```js
