@@ -1,4 +1,4 @@
-#Understanding data types in javascript
+# Understanding data types in javascript
 
 ## Primitive data types 
 
