@@ -1,6 +1,4 @@
-# Understanding data types in javascript
-
-## Primitive data types 
+# Primitive data types 
 
 Primitive data types are data types that are not defined as an object and do not have properties or methods 
 
