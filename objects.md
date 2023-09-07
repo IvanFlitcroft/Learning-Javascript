@@ -22,3 +22,26 @@ let user = {     // an object
 Note -> it follows this structure `keyName: keyValue`
 
 Object properties can be accessed by doing `objectName.keyName`
+
+## Square brackets in an object
+
+```js
+
+let user = {};
+
+// set
+user["likes birds"] = true;
+
+// get
+alert(user["likes birds"]); // true
+
+// delete
+delete user["likes birds"];
+
+```
+
+let key = prompt("What do you want to know about the user?", "name");
+
+// access by variable
+alert( user[key] ); // John (if enter "name")
+
