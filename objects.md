@@ -2,7 +2,7 @@
 
 With Primitives, the variables only contain one value such as a number or string, however with objects, the variable can store keyed collections of various data and even more objects (such as an array inside another array).
 
-##creating an object
+## creating an object
 
 Objects are created by using `{}` or by using the wrapper method of `new Object()`. The use of `{}` is known as object literal, and the use of `new Object()` is known as object constructor.
 
