@@ -30,18 +30,24 @@ Object properties can be accessed by doing `objectName.keyName`
 let user = {};
 
 // set
-user["likes birds"] = true;
+user["Has glasses"] = true;
 
 // get
-alert(user["likes birds"]); // true
+alert(user["Has glasses"]); // true
 
 // delete
-delete user["likes birds"];
-
+delete user["Has glasses"];
 ```
+
+```js
+let user = {
+  name: "Ivan",
+  age: 18
+};
 
 let key = prompt("What do you want to know about the user?", "name");
 
 // access by variable
-alert( user[key] ); // John (if enter "name")
+alert( user[key] ); // Ivan (if enter "name")
 
+```
