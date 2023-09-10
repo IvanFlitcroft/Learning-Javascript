@@ -56,4 +56,47 @@ alert( user[key] ); // Ivan (if enter "name")
 ```
 
 Here we defined an object called user and gave it two properties. After, we instantiated a prompt (called key) which will prompt the client to enter something they want to know about the user. 
-Because the prompt has `,"name"`, ff they enter "name" then it will return user[name] which will be Ivan.
+Because the prompt has `,"name"`, if they enter "name" then it will return user[name] which will be Ivan.
+
+### computed properties
+
+Using the example with prompts, we can actually use a prompt to form a property as we can see in this example
+
+```js
+let fruit = prompt("Which fruit to buy?", "apple"); // define a prompt and an answer we want
+
+let bag = {
+  [fruit]: 5, // the name of the property is taken from the variable fruit. Essentially we are saying there are 5 of the fruit if that fruit is mentioned during the prompt
+};
+
+alert( bag.apple ); // 5 if fruit="apple"
+```
+In the above example, the properties of bag will become {apple: 5} if the user enters apple.
+
+## Property creation shortcut
+
+Wasnt too sure on a title for this part but I think this summarises the point well. Lets say we had a function that would create a user when given two parameters `name and age`
+
+```js
+function createUser(name, age) {
+  return {
+    name: name,
+    age: age,
+    // ...other properties
+  };
+}
+
+let user = createUser("Ivan", 18);
+alert(user.name); // Ivan
+```
+As you can see we gave the function two values and we returned the values as properties to the object. Well there is actually a quicker way to do this. Instead of writing `name:name` we can just write `name` like this,
+
+```js
+function createUser(name, age) {
+  return {
+    name, // same as name: name
+    age,  // same as age: age
+    // ...
+  };
+}
+```
