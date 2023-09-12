@@ -2,6 +2,10 @@
 
 With Primitives, the variables only contain one value such as a number or string, however with objects, the variable can store keyed collections of various data and even more objects (such as an array inside another array).
 
+There are many different types of objects such as:
+- Array to store ordered data collections,
+- Date to store the information about the date and time,
+- Error to store the information about an error.
 ## creating an object
 
 Objects are created by using `{}` or by using the wrapper method of `new Object()`. The use of `{}` is known as object literal, and the use of `new Object()` is known as object constructor.
@@ -100,3 +104,74 @@ function createUser(name, age) {
   };
 }
 ```
+
+## Properties
+
+### Property rules
+A variable cannot have a name equal to one of the language-reserved words like “for”, “let”, “return” etc.
+
+But for an object property, there’s no such restriction:
+
+```js
+let bag = {
+for: 1,
+let: 2,
+return: 3
+} ;
+```
+In addition there are no limitations so you can use anytype of primitive as a property name as it will just get converted to a string anyways for example `0 becomes "0"`
+
+### Property existence
+
+When we try and read/call a property of an object, we will get given the value of the property e.g
+
+```js
+let bag = {
+apples: 10;
+};
+alert(bag.apples) //will output 10
+
+```
+
+However, if a property does not exist and we try to call it for example `alert(bag.grapes)` it will return `undefined`
+
+One way of checking for a property existence is by using the `in` operator.
+
+```js
+let user = {
+name: "Ivan",
+age: 18
+};
+
+alert("age" in user); //this will output true as there is an age property
+alert("height" in user); //this will output false as there is no height property
+```
+
+## for looping through object properties
+
+the general structure of this is 
+
+```js
+for (key in object) {
+ 
+}
+```
+## Summary
+
+Objects are associative arrays with several special features.
+
+They store properties (key-value pairs), where:
+
+- Property keys must be strings or symbols (usually strings).
+- Values can be of any type.
+
+To access a property, we can use:
+
+- The dot notation: obj.property.
+- Square brackets notation obj["property"]. Square brackets allow taking the key from a variable, like obj[varWithKey].
+
+Additional operators:
+
+- To delete a property: delete obj.prop.
+- To check if a property with the given key exists: "key" in obj.
+- To iterate over an object: for (let key in obj) loop.
