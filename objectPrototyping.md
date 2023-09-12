@@ -25,3 +25,9 @@ glasses: true,
 
 console.log(son.age) //output 40
 ```
+In addition, if we are going to create an object using the `.create` method then we would follow this structure
+
+```js
+Object.create(prototype[, properties])
+
+```
