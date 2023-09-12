@@ -6,6 +6,8 @@ There are many different types of objects such as:
 - Array to store ordered data collections,
 - Date to store the information about the date and time,
 - Error to store the information about an error.
+
+
 ## creating an object
 
 Objects are created by using `{}` or by using the wrapper method of `new Object()`. The use of `{}` is known as object literal, and the use of `new Object()` is known as object constructor.
@@ -26,6 +28,25 @@ let user = {     // an object
 Note -> it follows this structure `keyName: keyValue`
 
 Object properties can be accessed by doing `objectName.keyName`
+
+## TypeOf operator
+
+typeOf is used to find the dataType of a js variable or property
+
+```js
+console.log(typeof 42);
+// Expected output: "number"
+
+console.log(typeof 'blubber');
+// Expected output: "string"
+
+console.log(typeof true);
+// Expected output: "boolean"
+
+console.log(typeof undeclaredVariable);
+// Expected output: "undefined"
+
+```
 
 ## Square brackets in an object
 
