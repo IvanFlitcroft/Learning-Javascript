@@ -42,3 +42,39 @@ sayings.clear();
 sayings.size; // 0
 
 ```
+## Set object
+
+The Set object lets you store unique values of any type, whether primitive values or object references. Its like an array but it stores data of different types aswell.
+
+### Set methods
+|Method|What does it do|
+|---|---|
+|.set(value)|Inserts the key value pair into the map object|
+|.has(value)|Checks if the map object contains that key, will output true/false|
+|.delete(value)|deletes the key value pair associated with that key|
+|.size|Returns the current size of the map ie how many key value pairs there are|
+
+### Example
+
+```js
+const mySet = new Set();
+mySet.add(1);
+mySet.add("some text");
+mySet.add("foo");
+
+mySet.has(1); // true
+mySet.delete("foo");
+mySet.size; // 2
+
+for (const item of mySet) {
+  console.log(item);
+}
+// 1
+// "some text"
+
+```
+### Converting from set to array
+
+To convert, use the `Array.from()` method.
+
+
