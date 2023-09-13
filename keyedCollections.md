@@ -11,7 +11,7 @@ Map is similar to a dictionary in c#, you insert key value pairs and can iterate
 ### Map methods
 
 |Method|What does it do|
----
+|---|---|
 |.set(key,value)|Inserts the key value pair into the map object|
 |.get(key)|Gets the value associated with the key|
 |.has(key)|Checks if the map object contains that key, will output true/false|
