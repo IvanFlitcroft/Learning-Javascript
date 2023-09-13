@@ -31,3 +31,4 @@ In addition, if we are going to create an object using the `.create` method then
 Object.create(prototype[, properties])
 
 ```
+Luckily, there are methods to get the property and set the property of an objec as the `[[Prototype]]` internal slot can be accessed and modified with the `Object.getPrototypeOf()` and `Object.setPrototypeOf()`
