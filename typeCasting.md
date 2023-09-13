@@ -24,3 +24,6 @@ The conversion follows the rules:
 | null| 0 |
 | true/false| 1/0 |
 |string | The string is read “as is”, whitespaces (includes spaces, tabs \t, newlines \n etc.) from both sides are ignored. An empty string becomes 0. An error gives NaN.|
+
+With boolean typecasting
+if the value in the method is `0, null, undefined, NaN, "" ` then it will return false, else it will return true
