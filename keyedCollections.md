@@ -16,3 +16,29 @@ Map is similar to a dictionary in c#, you insert key value pairs and can iterate
 |.get(key)|Gets the value associated with the key|
 |.has(key)|Checks if the map object contains that key, will output true/false|
 |.delete(key)|deletes the key value pair associated with that key|
+|.size|Returns the current size of the map ie how many key value pairs there are|
+
+### Example
+
+```js
+const sayings = new Map();
+sayings.set("dog", "woof");
+sayings.set("cat", "meow");
+sayings.set("elephant", "toot");
+sayings.size; // 3
+sayings.get("dog"); // woof
+sayings.get("fox"); // undefined
+sayings.has("bird"); // false
+sayings.delete("dog");
+sayings.has("dog"); // false
+
+for (const [key, value] of sayings) {
+  console.log(`${key} goes ${value}`);
+}
+// "cat goes meow"
+// "elephant goes toot"
+
+sayings.clear();
+sayings.size; // 0
+
+```
