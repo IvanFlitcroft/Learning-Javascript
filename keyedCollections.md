@@ -42,6 +42,14 @@ sayings.clear();
 sayings.size; // 0
 
 ```
+
+## WeakMap
+
+In a weakMap, the keys or properties must be objects, not primitive value like number or string.
+
+
+
+
 ## Set object
 
 The Set object lets you store unique values of any type, whether primitive values or object references. Its like an array but it stores data of different types aswell.
