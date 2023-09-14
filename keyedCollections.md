@@ -77,4 +77,10 @@ for (const item of mySet) {
 
 To convert, use the `Array.from()` method.
 
+### Why is a set preferred to an array?
 
+With Set objects you can delete elements by their value whereas you cannot do that with an array. If you wanted to delete an element in an array with a specific value then you would have to splice the array based on an elements index.
+
+```js
+array.splice(array.indexOf(val), 1))
+```
