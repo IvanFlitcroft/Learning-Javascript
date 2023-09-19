@@ -11,11 +11,11 @@ With a map object, the properties are kept in memory while the data structure it
 ## Methods for weakMaps
 
 | Method | What does it do|
-| ---| --- |
+| ---|--- |
 | weakMap.delete(key) | Removes the value in the weakMap that is associated with the key|
 | weakMap.get(key) | Returns the value associated to the key, or undefined if there is none. |
 | weakMap.has(key) | Returns a Boolean asserting whether a value has been associated to the key in the WeakMap object or not. |
-| weakMap.set(key)| Sets the value for the key in the WeakMap object. Returns the WeakMap object. |
+| weakMap.set(key) | Sets the value for the key in the WeakMap object. Returns the WeakMap object. |
 
 ## Examples
 ```js
