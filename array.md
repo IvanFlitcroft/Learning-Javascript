@@ -33,9 +33,9 @@ console.log(elements.join(''));
 
 console.log(elements.join('-'));
 // Expected output: "Fire-Air-Water"
-
+ 
 ```
-|
+ |
 | array.slice() | Returns a shallow copy of a portion of an array into a new array object 
 ```js
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
@@ -43,4 +43,4 @@ const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 console.log(animals.slice(2));
 // Expected output: Array ["camel", "duck", "elephant"]
 ```
-|
+ |
